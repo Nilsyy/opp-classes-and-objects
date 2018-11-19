@@ -27,7 +27,7 @@ class BankAccount
 
 end
 
-my_account = BankAccount.new(0, 2)
+my_account = BankAccount.new(0, 8)
 
 puts my_account.balance
 my_account.deposit(500)
