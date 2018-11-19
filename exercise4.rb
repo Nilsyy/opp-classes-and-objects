@@ -17,7 +17,7 @@ class Paperperson
  end
 
  def deliver(start_address, end_address)
-   @experience = start_address - end_address
+   @experience = end_address - start_address
    if @experience > @quota
      @earnings += @quota * 0.25
      @earnings += (@experience - @quota) * 0.5
@@ -43,5 +43,5 @@ end
 
 
 sanna = Paperperson.new("Sanna")
-sanna.deliver(-14, -88)
+sanna.deliver(14, 88)
 sanna.report
